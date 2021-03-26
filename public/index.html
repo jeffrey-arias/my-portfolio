@@ -25,8 +25,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Jeffrey Arias - Software Developer</title>
+    <script type="text/JavaScript">
+      function checkIfMobile() {
+        if (typeof window.orientation !== 'undefined'){
+          document.getElementById("mobile").style.display ="inline";
+          document.getElementById("desktop").style.display="none";
+      }
+    }
+    </script>
   </head>
-  <body>
+  <body onload="checkIfMobile();">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" style="height:100vh;"></div>
   </body>

@@ -1,0 +1,63 @@
+#hiddenTextFunnySub  {
+    animation: cssAnimation 0s 0.5s forwards;
+    opacity: 0; 
+}
+
+#hiddenTextFunnySub2  {
+    animation: cssAnimation 0s 1.5s forwards;
+    opacity: 0; 
+}
+
+@keyframes cssAnimation {
+  to   { opacity: 1; }
+}
+
+#mobile {
+    display: none;
+}
+.mainBody {
+    text-align: center;
+    color: white;
+    margin-top: 20vh;
+    font-family: "Courier";
+}
+
+.mainText {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.text, .textHidden, .strikethroughtextHidden {
+    font-size: 20px;
+    font-family: "Courier New";
+}
+
+.strikethroughtextHidden {
+    text-decoration: line-through;
+}
+
+.tinyText {
+    font-size: 11px;
+    font-family: "Courier New";
+    font-weight: bold;
+    opacity: 50%;
+    color: black;
+    margin-top: -5vh;
+    margin-bottom: 10vh;
+}
+
+.poweredByText {
+    font-size: 10px;
+    font-family: Tahoma;
+    font-weight: bold;
+    opacity: 50%;    
+    color: black
+}
+
+.textHidden {
+    display: none;
+}
+
+.strikethroughtextHidden {
+    display: none;
+}

@@ -15,7 +15,13 @@ export default class TopNavBar extends Component {
                         <Link className="nav-link" to="#">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">Experience</Link>
+                        <Link className="nav-link" to="#">Projects</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="#">About Me</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="#">Contact</Link>
                     </li>
                     </ul>
                 </div>
