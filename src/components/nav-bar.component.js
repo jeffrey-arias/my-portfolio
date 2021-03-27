@@ -10,11 +10,11 @@ export default class TopNavBar extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav nav-fill w-100">
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" >
                         <Link className="nav-link" to="Projects">Projects</Link>
                     </li>
                     <li className="nav-item">

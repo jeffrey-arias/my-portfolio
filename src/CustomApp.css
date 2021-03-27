@@ -23,3 +23,20 @@
     background-position-x: center;
     height: 50vh;
   }
+
+
+.nav-item {
+  position: relative;
+}
+
+.active:after, .nav-item:hover:after {
+	content: ' ';
+	position: absolute;
+	border: solid 10px transparent;
+	border-top: solid 0px transparent;
+	border-width: 10px;
+    top:3em;
+	left: 50%;
+	margin-left: -10px;
+	border-color: #343a40 transparent transparent transparent;
+}

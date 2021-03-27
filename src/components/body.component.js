@@ -34,6 +34,7 @@ export default class MainBody extends Component {
         const reactLogo = require('../img/react.png');
         const bootstrapLogo = require('../img/bootstrap.png');
         const jQueryLogo = require('../img/jquery.png');
+        const sassLogo = require('../img/sass.png');
                   
         return(
             <div className="mainBody" id="mainBody">
@@ -53,6 +54,7 @@ export default class MainBody extends Component {
                         <img className="imgIcons" height={30} title={'React.js'} width={30} src={reactLogo.default}/>
                         <img className="imgIcons" height={30} title={'Bootstrap'} width={30} src={bootstrapLogo.default}/>
                         <img className="imgIcons" height={40} title={'jQuery'} width={40} src={jQueryLogo.default}/>
+                        <img className="imgIcons" height={30} title={'Sass'} width={30} src={sassLogo.default}/>
                     </div> 
                 </nav>
             </div>  
@@ -68,5 +70,13 @@ export default class MainBody extends Component {
             document.getElementById("tinyText").style.paddingLeft="5vh";
         }
         $("#App").removeClass("SubApp").addClass("App");
+        
+        $(".nav-item").on("click", function(event) {
+            var clickedItem = $(this);
+            $(".nav-item").each( function() {
+                $(this).removeClass( "active" );
+            });
+            clickedItem.addClass( "active" );
+        });
     }
 }
