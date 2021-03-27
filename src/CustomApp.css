@@ -1,5 +1,25 @@
 .App {
     text-align: left;
-    background-color: brown;
+    /*background-color: brown;*/
+    background-image: url("./img/coffee.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
     height: 100%;
+  }
+
+  .SubApp {
+    text-align: left;
+    /*background-color: brown;*/
+    background-color: white;
+    height: 100%;
+  }
+
+  .underConstruction {
+    margin-top: 10vh;
+    background-image: url("./img/under_construction.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    height: 50vh;
   }
