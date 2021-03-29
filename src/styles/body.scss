@@ -61,7 +61,7 @@ $bodySubTextFontSize : 16px;
     font-size: 11px;
     font-family: "Courier New";
     font-weight: bold;
-    opacity: 15%;
+    opacity: 0.15;
     color: $bodyTinyTextColor;
     margin-top: -4vh;
     margin-bottom: 10vh;
@@ -89,6 +89,6 @@ $bodySubTextFontSize : 16px;
 }
 
 .imgIcons {
-    opacity: 90%;
+    opacity: "90%";
 }           
 

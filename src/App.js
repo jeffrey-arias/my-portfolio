@@ -3,7 +3,7 @@ import './CustomApp.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 // Custom components
 import TopNavBar from './components/nav-bar.component';
@@ -16,12 +16,14 @@ import Footer from './components/footer.component';
 function App() {
   return (
     <div className="App" id="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL} >
        <TopNavBar />
        <br/>
-       <Route path ="/" exact component={MainBody}/>
-       <Route path ="/Projects" component={Projects}/>
-       <Route path ="/Contact" component={Contact}/>
+       <Switch>
+        <Route path ="/" exact component={MainBody}/>
+        <Route path ="/Projects" component={Projects}/>
+        <Route path ="/Contact" component={Contact}/>
+       </Switch>
        <Footer />
     </Router>
     </div>

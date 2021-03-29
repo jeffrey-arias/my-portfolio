@@ -16,7 +16,7 @@ export default class Footer extends Component {
         return(
                 <footer class="footer">
                     <div class="container" class="mx-auto">
-                    <div className="poweredByText">I made this site is made with: </div>
+                    <div className="poweredByText">I made this site is made with:</div>
                         <img className="imgIcons" height={30} title={'React.js'} width={30} src={reactLogo.default}/>
                         <img className="imgIcons" height={30} title={'Bootstrap'} width={30} src={bootstrapLogo.default}/>
                         <img className="imgIcons" height={40} title={'jQuery'} width={40} src={jQueryLogo.default}/>
