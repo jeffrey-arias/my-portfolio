@@ -10,6 +10,7 @@ import TopNavBar from './components/nav-bar.component';
 import MainBody from './components/body.component';
 import Projects from './components/projects.component';
 import Contact from './components/contact.component';
+import Footer from './components/footer.component';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
        <Route path ="/" exact component={MainBody}/>
        <Route path ="/Projects" component={Projects}/>
        <Route path ="/Contact" component={Contact}/>
+       <Footer />
     </Router>
     </div>
   );

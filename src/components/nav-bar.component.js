@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 
 export default class TopNavBar extends Component {
     render() {
+
+        const JAlogo = require('../img/JA logo.png');
+
         return(
             <div>
             <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

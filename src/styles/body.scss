@@ -1,3 +1,10 @@
+$bodyTextColor : white;
+$bodyTinyTextColor : black;
+$bodyFont: "Courier";
+$bodySubTextFont : "Courier New";
+$bodyTextSize : 25px;
+$bodySubTextFontSize : 16px;
+
 #hiddenTextFunnySub  {
     animation: cssAnimation 0s 0.5s forwards;
     opacity: 0;
@@ -20,17 +27,15 @@
 #mobile {
     display: none;
 }
+
 .mainBody {
-    overflow-y: auto; 
-    min-height: 500px;
+    overflow-y: auto;
+    min-height: 65vh;
     text-align: right;
-    color: white;
+    color: $bodyTextColor;
     margin-top: 20vh;
-    font-family: "Courier";
+    font-family: $bodyFont;
     background-color: none;
-    /*background-image: url("https://cdn.hipwallpaper.com/i/34/86/fOQ2Dj.png");
-    background-repeat: no-repeat;
-    background-size: cover;*/
 }
 
 .mainText {
@@ -39,12 +44,12 @@
 }
 
 .text, .textHidden, .strikethroughtextHidden {
-    font-size: 16px;
-    font-family: "Courier New";
+    font-size: $bodySubTextFontSize;
+    font-family: $bodySubTextFont;
 }
 
 .text , .strikethroughtextHidden{
-    font-size: 25px;
+    font-size: $bodyTextSize;
     display: block;
 }
 
@@ -57,7 +62,7 @@
     font-family: "Courier New";
     font-weight: bold;
     opacity: 15%;
-    color: black;
+    color: $bodyTinyTextColor;
     margin-top: -4vh;
     margin-bottom: 10vh;
     padding-right: 12vh;
@@ -85,4 +90,5 @@
 
 .imgIcons {
     opacity: 90%;
-}
+}           
+

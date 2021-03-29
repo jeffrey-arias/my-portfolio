@@ -1,6 +1,5 @@
 .App {
     text-align: left;
-    /*background-color: brown;*/
     background-image: url("./img/coffee.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,13 +9,13 @@
 
   .SubApp {
     text-align: left;
-    /*background-color: brown;*/
-    background-color: white;
+    background-color: red;
     height: 100%;
   }
 
   .underConstruction {
     margin-top: 10vh;
+    margin-bottom:15vh;
     background-image: url("./img/under_construction.png");
     background-repeat: no-repeat;
     background-size: contain;

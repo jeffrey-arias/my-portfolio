@@ -1,0 +1,110 @@
+#hiddenTextFunnySub {
+  -webkit-animation: cssAnimation 0s 0.5s forwards;
+          animation: cssAnimation 0s 0.5s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hiddenTextFunnySub2 {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cssAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+.mainBody {
+  overflow-y: auto;
+  min-height: 65vh;
+  text-align: right;
+  color: white;
+  margin-top: 20vh;
+  font-family: "Courier";
+  background-color: none;
+}
+
+.mainText {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.text, .textHidden, .strikethroughtextHidden {
+  font-size: 16px;
+  font-family: "Courier New";
+}
+
+.text, .strikethroughtextHidden {
+  font-size: 25px;
+  display: block;
+}
+
+.strikethroughtextHidden {
+  text-decoration: line-through;
+}
+
+.tinyText {
+  font-size: 11px;
+  font-family: "Courier New";
+  font-weight: bold;
+  opacity: 15%;
+  color: black;
+  margin-top: -4vh;
+  margin-bottom: 10vh;
+  padding-right: 12vh;
+}
+
+.poweredByText {
+  font-size: 10px;
+  font-family: Tahoma;
+  font-weight: bold;
+  opacity: 50%;
+  color: black;
+  text-align: center;
+}
+
+.mx-auto {
+  text-align: center;
+}
+
+.textHidden {
+  display: none;
+}
+
+.strikethroughtextHidden {
+  display: none;
+}
+
+.imgIcons {
+  opacity: 90%;
+}
+/*# sourceMappingURL=body.css.map */
