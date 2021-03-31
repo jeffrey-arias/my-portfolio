@@ -43,7 +43,7 @@
   display: none;
 }
 
-.mainBody {
+.mainBody, .mainBodyMobile {
   overflow-y: auto;
   min-height: 65vh;
   text-align: right;
@@ -53,12 +53,21 @@
   background-color: none;
 }
 
-.mainText {
+.mainBodyMobile {
+  margin-top: 10vh;
+  min-height: 85vh;
+}
+
+.mainText, .mainTextMobile {
   font-size: 100px;
   font-weight: bold;
 }
 
-.text, .textHidden, .strikethroughtextHidden {
+.mainTextMobile {
+  font-size: 80px;
+}
+
+.text, .textHidden, .strikethroughtextHidden, textMobile, .strikethroughtextMobileHidden {
   font-size: 16px;
   font-family: "Courier New";
 }
@@ -68,11 +77,16 @@
   display: block;
 }
 
-.strikethroughtextHidden {
+.textMobile, .strikethroughtextMobileHidden {
+  font-size: 22px;
+  display: block;
+}
+
+.strikethroughtextHidden, .strikethroughtextMobileHidden {
   text-decoration: line-through;
 }
 
-.tinyText {
+.tinyText, .tinyTextMobile {
   font-size: 11px;
   font-family: "Courier New";
   font-weight: bold;
@@ -92,6 +106,12 @@
   text-align: center;
 }
 
+.tinyTextMobile {
+  margin-bottom: 4vh;
+  padding-left: 5vh;
+  padding-right: 0;
+}
+
 .mx-auto {
   text-align: center;
 }
@@ -100,7 +120,7 @@
   display: none;
 }
 
-.strikethroughtextHidden {
+.strikethroughtextHidden, .strikethroughtextMobileHidden {
   display: none;
 }
 

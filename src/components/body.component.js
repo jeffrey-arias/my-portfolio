@@ -32,7 +32,7 @@ export default class MainBody extends Component {
             <div className="mainBody" id="mainBody">
                 <main role="main" className="container">
                         <div onMouseOver={hideDivs} onMouseOut={showDivs}>
-                        <div className="mainText">Hello</div>
+                        <div id="mainText" className="mainText">Hello</div>
                         <div className="tinyText" id="tinyText"><mark>&lt; <text id="mobile">tap</text><text id="desktop">mouseover</text> for fun /&gt;</mark></div>
                         </div>
                         <div className="text">I am <b>Jeff</b>.</div>
@@ -47,14 +47,24 @@ export default class MainBody extends Component {
     }
 
     componentDidMount() {
-        if (typeof window.orientation !== 'undefined'){
+        const isMobile = typeof window.orientation !== 'undefined';
+        if (isMobile){
             document.getElementById("mobile").style.display ="inline";
             document.getElementById("desktop").style.display="none";
             document.getElementById("mainBody").style.textAlign="left";
-            document.getElementById("tinyText").style.paddingRight="0";
-            document.getElementById("tinyText").style.paddingLeft="5vh";
+            $("#tinyText").removeClass("tinyText").addClass("tinyTextMobile");
+            $("#visibleText").removeClass("text").addClass("textMobile");
+            $("#hiddenText").removeClass("strikethroughtextHidden").addClass("strikethroughtextMobileHidden");
+            $("#App").removeClass("SubApp").removeClass("App").addClass("AppMobile");
+            $("#mainBody").removeClass("mainBody").addClass("mainBodyMobile");
+            if (window.innerHeight < 600) {
+                $("#hiddenTextFunny").text("I turn caffeine into\nlines of code.").html( $("#hiddenTextFunny").text().replace(/\n/g, '<br />'));;
+                $("#mainText").removeClass("mainText").addClass("mainTextMobile");
+            }
         }
-        $("#App").removeClass("SubApp").addClass("App");
+        else {
+            $("#App").removeClass("SubApp").addClass("App");
+        }
         
         $(".nav-item").on("click", function(event) {
             var clickedItem = $(this);

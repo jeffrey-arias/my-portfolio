@@ -26,4 +26,11 @@ export default class Footer extends Component {
               
         )
     }
+    componentDidMount() {
+        const isMobile = typeof window.orientation !== 'undefined';
+        if (isMobile){
+            $("footer").addClass("footerMobile");
+        }
+    }
+    
 }

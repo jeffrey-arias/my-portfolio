@@ -3,6 +3,7 @@ $bodyTinyTextColor : black;
 $bodyFont: "Courier";
 $bodySubTextFont : "Courier New";
 $bodyTextSize : 25px;
+$bodyTextSizeMobile : 22px;
 $bodySubTextFontSize : 16px;
 
 #hiddenTextFunnySub  {
@@ -28,22 +29,30 @@ $bodySubTextFontSize : 16px;
     display: none;
 }
 
-.mainBody {
+.mainBody, .mainBodyMobile {
     overflow-y: auto;
     min-height: 65vh;
     text-align: right;
     color: $bodyTextColor;
     margin-top: 20vh;
     font-family: $bodyFont;
-    background-color: none;
+    background-color: none; 
 }
 
-.mainText {
+.mainBodyMobile  {
+    margin-top: 10vh;
+    min-height: 85vh;
+}
+
+.mainText, .mainTextMobile {
     font-size: 100px;
     font-weight: bold;
 }
 
-.text, .textHidden, .strikethroughtextHidden {
+.mainTextMobile {
+    font-size: 80px;
+}
+.text, .textHidden, .strikethroughtextHidden, textMobile , .strikethroughtextMobileHidden {
     font-size: $bodySubTextFontSize;
     font-family: $bodySubTextFont;
 }
@@ -53,11 +62,16 @@ $bodySubTextFontSize : 16px;
     display: block;
 }
 
-.strikethroughtextHidden {
+.textMobile , .strikethroughtextMobileHidden {
+    font-size: $bodyTextSizeMobile;
+    display: block;
+}
+
+.strikethroughtextHidden, .strikethroughtextMobileHidden {
     text-decoration: line-through;
 }
 
-.tinyText {
+.tinyText, .tinyTextMobile {
     font-size: 11px;
     font-family: "Courier New";
     font-weight: bold;
@@ -77,6 +91,13 @@ $bodySubTextFontSize : 16px;
     text-align: center;
 }
 
+
+.tinyTextMobile {
+    margin-bottom: 4vh;
+    padding-left: 5vh;
+    padding-right: 0;
+}
+
 .mx-auto {
     text-align: center;
 }
@@ -84,7 +105,7 @@ $bodySubTextFontSize : 16px;
     display: none;
 }
 
-.strikethroughtextHidden {
+.strikethroughtextHidden, .strikethroughtextMobileHidden {
     display: none;
 }
 

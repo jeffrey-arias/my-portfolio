@@ -24,6 +24,6 @@ export default class Contact extends Component {
         )
     }
     componentDidMount() {
-        $("#App").removeClass("App").addClass("SubApp");
+        $("#App").removeClass("App").removeClass("AppMobile").addClass("SubApp");
     }
 }
