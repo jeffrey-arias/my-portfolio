@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.45680465.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.1182e847.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.1182e847.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.abb4bea6.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.86285d24.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.86285d24.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.cfebcd71.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.cfebcd71.js.map",
     "static/css/2.ef9168ec.chunk.css": "/my-portfolio/static/css/2.ef9168ec.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.7e1c0662.chunk.js.map": "/my-portfolio/static/js/3.7e1c0662.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/my-portfolio/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.45680465.chunk.css.map": "/my-portfolio/static/css/main.45680465.chunk.css.map",
+    "static/css/main.abb4bea6.chunk.css.map": "/my-portfolio/static/css/main.abb4bea6.chunk.css.map",
     "static/js/2.8f0c0b12.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.8f0c0b12.chunk.js.LICENSE.txt",
     "static/media/JA logo.png": "/my-portfolio/static/media/JA logo.47d39c00.png",
     "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.24d68855.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.cfebcd71.js",
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.8f0c0b12.chunk.js",
-    "static/css/main.45680465.chunk.css",
-    "static/js/main.1182e847.chunk.js"
+    "static/css/main.abb4bea6.chunk.css",
+    "static/js/main.86285d24.chunk.js"
   ]
 }
