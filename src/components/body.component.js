@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import $ from 'jquery';
+import {Dimensions} from 'react-native';
 
 import '../styles/body.css';
 
@@ -24,7 +25,12 @@ function showDivs(e) {
     }
 }
 export default class MainBody extends Component {
-
+    constructor () {
+        super();      
+        Dimensions.addEventListener('change', () => {
+            this.updateBodyStyles();
+        });
+    }
   
     render() {
                   
@@ -45,27 +51,47 @@ export default class MainBody extends Component {
             </div>  
         )
     }
+    updateBodyStyles () {
+        const isMobile = (typeof window.orientation !== 'undefined');
+        const isPortrait =  window.innerHeight > window.innerWidth;
+        $("#App").removeClass("AppMobile").addClass("App");
 
-    componentDidMount() {
-        const isMobile = typeof window.orientation !== 'undefined';
         if (isMobile){
             document.getElementById("mobile").style.display ="inline";
             document.getElementById("desktop").style.display="none";
-            document.getElementById("mainBody").style.textAlign="left";
             $("#tinyText").removeClass("tinyText").addClass("tinyTextMobile");
             $("#visibleText").removeClass("text").addClass("textMobile");
             $("#hiddenText").removeClass("strikethroughtextHidden").addClass("strikethroughtextMobileHidden");
-            $("#App").removeClass("SubApp").removeClass("App").addClass("AppMobile");
             $("#mainBody").removeClass("mainBody").addClass("mainBodyMobile");
-            if (window.innerHeight < 600) {
-                $("#hiddenTextFunny").text("I turn caffeine into\nlines of code.").html( $("#hiddenTextFunny").text().replace(/\n/g, '<br />'));;
+            $("#App").css("background-position-y", "55px");
+            if (isPortrait) {
+                document.getElementById("mainBody").style.textAlign="left";
+                $("#App").removeClass("SubApp").removeClass("App").addClass("AppMobile");
+            } else {
+                document.getElementById("mainBody").style.textAlign="right";
+                $("#App").removeClass("SubApp").addClass("App");
+                $("#App").css("background-position-y", "55px");
+                $("#mainApp").css("font-size", "60px");
+
+            }
+            $("#hiddenTextFunny").text("I turn caffeine into lines of code.").html();
+
+            if (window.innerHeight < 650 ) {
+                if (isPortrait) {
+                    $("#hiddenTextFunny").text("I turn caffeine into\nlines of code.").html( $("#hiddenTextFunny").text().replace(/\n/g, '<br />'));
+                }   
                 $("#mainText").removeClass("mainText").addClass("mainTextMobile");
             }
         }
         else {
             $("#App").removeClass("SubApp").addClass("App");
         }
-        
+    }
+    
+    componentDidMount() {
+        this.updateBodyStyles();
+        window.addEventListener("resize", this.updateBodyStyles());
+
         $(".nav-item").on("click", function(event) {
             var clickedItem = $(this);
             $(".nav-item").each( function() {

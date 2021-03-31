@@ -1,0 +1,48 @@
+.App, .AppMobile {
+  text-align: left;
+  background-image: url("../img/coffee.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FD1600;
+  height: 100%;
+}
+
+.AppMobile {
+  background-image: url("../img/coffee_mobile.png");
+  background-color: #FD1600;
+  background-position: center;
+  background-size: cover, contain;
+}
+
+.SubApp {
+  text-align: left;
+  background-color: #FD1600;
+  height: 100%;
+}
+
+.underConstruction {
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  background-image: url("../img/under_construction.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  height: 50vh;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.active:after {
+  content: ' ';
+  position: absolute;
+  border: solid 10px transparent;
+  border-top: solid 0px transparent;
+  border-width: 10px;
+  top: 3em;
+  left: 50%;
+  margin-left: -10px;
+  border-color: #343a40 transparent transparent transparent;
+}
+/*# sourceMappingURL=app.css.map */

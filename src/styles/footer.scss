@@ -1,7 +1,11 @@
 //variables
-$backgroundColor : red;
+$backgroundColor : #FD1600;
 
 footer {
+    background-color: none;
+}
+
+.footerMobile {
     background-color: $backgroundColor;
 }
 

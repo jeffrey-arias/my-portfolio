@@ -1,5 +1,4 @@
 // Standard imports
-import './CustomApp.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -12,6 +11,8 @@ import Projects from './components/projects.component';
 import Contact from './components/contact.component';
 import Footer from './components/footer.component';
 
+// Custom Styles
+import "./styles/app.css";
 
 function App() {
   return (
