@@ -57,6 +57,7 @@ export default class MainBody extends Component {
         $("#App").removeClass("AppMobile").addClass("App");
 
         if (isMobile){
+            $("#mainText").removeClass("mainTextMobile").addClass("mainText");
             document.getElementById("mobile").style.display ="inline";
             document.getElementById("desktop").style.display="none";
             $("#tinyText").removeClass("tinyText").addClass("tinyTextMobile");
